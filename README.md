@@ -21,7 +21,7 @@ Refer to the `upsample_drawbench_captions.py` script for implementation details.
 
 ## Images with and without caption upsampling
 
-After the DrawBench prompts were "upsampled", the `generate_images.py` script was used to generate images with the regular DrawBench prompts and the upsampled ones. You can find all the images here: [].
+After the DrawBench prompts were "upsampled", the `generate_images.py` script was used to generate images with the regular DrawBench prompts and the upsampled ones. You can find all the images here: [sayakpaul/drawbench-sdxl](https://huggingface.co/datasets/sayakpaul/drawbench-sdxl).
 
 ## Limitations
 
