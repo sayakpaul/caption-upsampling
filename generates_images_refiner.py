@@ -21,8 +21,7 @@ def main():
     )
     base.set_progress_bar_config(disable=True)
     refiner = DiffusionPipeline.from_pretrained(
-        refiner_ckpt_id,
-        torch_dtype=torch.float16
+        refiner_ckpt_id, torch_dtype=torch.float16
     ).to("cuda")
     refiner.set_progress_bar_config(disable=True)
 
@@ -39,8 +38,15 @@ def main():
 
         # Regular captions.
         prompts = list(samples["Prompt"])
-        base_images = base(prompts, generator=generator, num_inference_steps=25, output_type="latent").images
-        refined_images = refiner(prompts, image=base_images, generator=generator, num_inference_steps=25).images
+        base_images = base(
+            prompts, generator=generator, num_inference_steps=25, output_type="latent"
+        ).images
+        refined_images = refiner(
+            prompt=prompts,
+            image=base_images,
+            generator=generator,
+            num_inference_steps=25,
+        ).images
         for j in range(len(refined_images)):
             img_name = f"sdxl_refiner_{i + j}.png"
             refined_images[j].save(img_name)
@@ -49,9 +55,17 @@ def main():
         # Upsampled captions.
         usampled_prompts = list(samples["Upsampled Prompt"])
         base_images = base(
-            usampled_prompts, generator=generator, num_inference_steps=25, output_type="latent"
+            usampled_prompts,
+            generator=generator,
+            num_inference_steps=25,
+            output_type="latent",
         ).images
-        refined_images = refiner(usampled_prompts, image=base_images, generator=generator, num_inference_steps=25).images
+        refined_images = refiner(
+            prompt=usampled_prompts,
+            image=base_images,
+            generator=generator,
+            num_inference_steps=25,
+        ).images
         for j in range(len(refined_images)):
             img_name = f"sdxl_refiner_upsampled_prompt_{i + j}.png"
             refined_images[j].save(img_name)
