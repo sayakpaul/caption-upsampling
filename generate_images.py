@@ -49,7 +49,7 @@ def main():
             images[j].save(img_name)
             upsampled_caption_paths.append(img_name)
 
-    for i in range(drawbench):
+    for i in range(len(drawbench)):
         sample = drawbench[i]
         main_dict.update(
             {
