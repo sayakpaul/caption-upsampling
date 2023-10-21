@@ -4,9 +4,9 @@ This repository implements the idea of "caption upsampling" from [DALL-E 3](http
 
 <table>
     <tr>
-        <td><img src="https://datasets-server.huggingface.co/assets/sayakpaul/drawbench-sdxl/--/cb258765283ca50478f42273598d8e0e9b7da4fb/--/default/train/9/Image/image.jpg" alt="Sample Image 1"></td>
-        <td><img src="https://datasets-server.huggingface.co/assets/sayakpaul/drawbench-sdxl/--/cb258765283ca50478f42273598d8e0e9b7da4fb/--/default/train/20/Image/image.jpg" alt="Sample Image 2"></td>
-        <td><img src="https://datasets-server.huggingface.co/assets/sayakpaul/drawbench-sdxl/--/cb258765283ca50478f42273598d8e0e9b7da4fb/--/default/train/72/Image/image.jpg" alt="Sample Image 3"></td>
+        <td><img src="https://huggingface.co/datasets/sayakpaul/sample-datasets/resolve/main/caption-upsampling/sandwich.jpg" alt="Sample Image 1"></td>
+        <td><img src="https://huggingface.co/datasets/sayakpaul/sample-datasets/resolve/main/caption-upsampling/car_sheep.jpg" alt="Sample Image 2"></td>
+        <td><img src="https://huggingface.co/datasets/sayakpaul/sample-datasets/resolve/main/caption-upsampling/owl.jpg" alt="Sample Image 3"></td>
     </tr>
     <tr>
         <td><b>A white colored sandwich.</b></td>
@@ -14,9 +14,9 @@ This repository implements the idea of "caption upsampling" from [DALL-E 3](http
         <td><b>A side view of an owl sitting in a field.</b></td>
     </tr>
     <tr>
-        <td><img src="https://datasets-server.huggingface.co/assets/sayakpaul/drawbench-sdxl/--/cb258765283ca50478f42273598d8e0e9b7da4fb/--/default/train/9/Image_With_Upsampled_Prompt/image.jpg" alt="Sample Image 4"></td>
-        <td><img src="https://datasets-server.huggingface.co/assets/sayakpaul/drawbench-sdxl/--/cb258765283ca50478f42273598d8e0e9b7da4fb/--/default/train/20/Image_With_Upsampled_Prompt/image.jpg" alt="Sample Image 5"></td>
-        <td><img src="https://datasets-server.huggingface.co/assets/sayakpaul/drawbench-sdxl/--/cb258765283ca50478f42273598d8e0e9b7da4fb/--/default/train/72/Image_With_Upsampled_Prompt/image.jpg" alt="Sample Image 6"></td>
+        <td><img src="https://huggingface.co/datasets/sayakpaul/sample-datasets/resolve/main/caption-upsampling/upsampled_sandwich.jpg" alt="Sample Image 4"></td>
+        <td><img src="https://huggingface.co/datasets/sayakpaul/sample-datasets/resolve/main/caption-upsampling/upsampled_car_sheep.jpg" alt="Sample Image 5"></td>
+        <td><img src="https://huggingface.co/datasets/sayakpaul/sample-datasets/resolve/main/caption-upsampling/upsampled_owl.jpg" alt="Sample Image 6"></td>
     </tr>
     <tr>
         <td><b>A white-bread sandwich with delicate layers of fluffy turkey, crisp lettuce, and juicy tomatoes is placed on a wooden cutting board. The sandwich is surrounded by various condiments, including mayonnaise, mustard, and a small jar of pickles. The scene is set in a cozy kitchen, with natural light pouring in through a window.</b></td>
@@ -24,7 +24,7 @@ This repository implements the idea of "caption upsampling" from [DALL-E 3](http
         <td><b>A regal-looking snowy owl perches on a rocky outcropping, its feathers fluffed against the chilly wind. The bird's large, yellow eyes are fixed on a rabbit nibbling on some grass in the distance. The sun sets behind the owl, casting a warm orange glow over the landscape.</b></td>
     </tr>
 </table>
-<sub>Explore more samples <a href="https://huggingface.co/datasets/sayakpaul/drawbench">here</a></sub>
+<sub>Explore more samples <a href="https://huggingface.co/datasets/sayakpaul/drawbench-sdxl">here</a></sub>
 <br><br>
 
 "Caption upsampling" is the $10 term for deriving a highly descriptive caption from a short caption. Here is an example:
