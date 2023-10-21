@@ -43,6 +43,7 @@ def main():
         ).images
         refined_images = refiner(
             prompt=prompts,
+            negative_prompt=[""] * len(prompts),
             image=base_images,
             generator=generator,
             num_inference_steps=25,
@@ -62,6 +63,7 @@ def main():
         ).images
         refined_images = refiner(
             prompt=usampled_prompts,
+            negative_prompt=[""] * len(prompts),
             image=base_images,
             generator=generator,
             num_inference_steps=25,
