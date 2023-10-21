@@ -24,7 +24,8 @@ This repository implements the idea of "caption upsampling" from [DALL-E 3](http
         <td><b>A regal-looking snowy owl perches on a rocky outcropping, its feathers fluffed against the chilly wind. The bird's large, yellow eyes are fixed on a rabbit nibbling on some grass in the distance. The sun sets behind the owl, casting a warm orange glow over the landscape.</b></td>
     </tr>
 </table>
-
+<sub>Explore more samples <a href="https://huggingface.co/datasets/sayakpaul/drawbench">here</a></sub>
+<br><br>
 
 "Caption upsampling" is the $10 term for deriving a highly descriptive caption from a short caption. Here is an example:
 
@@ -45,11 +46,13 @@ Refer to the `upsample_drawbench_captions.py` script for implementation details.
 
 After the DrawBench prompts were "upsampled", the `generate_images.py` script was used to generate images with the regular DrawBench prompts and the upsampled ones. You can find all the images here: [sayakpaul/drawbench-sdxl](https://huggingface.co/datasets/sayakpaul/drawbench-sdxl).
 
-## Limitations
+## Limitations ⛔️
 
-Since SDXL uses CLIP, upsampled captions leading to more than 77 tokens will not be fully utilized. One way to remedy this would be to change the system prompt [here](https://github.com/sayakpaul/caption-upsampling/blob/c71388f39a9717c57faffcb14c0d9152c9d78657/upsample_drawbench_captions.py#L38) so that the underlying generation model is more length-aware.
+1. Since SDXL uses CLIP, upsampled captions leading to more than 77 tokens will not be fully utilized. One way to remedy this would be to change the system prompt [here](https://github.com/sayakpaul/caption-upsampling/blob/c71388f39a9717c57faffcb14c0d9152c9d78657/upsample_drawbench_captions.py#L38) so that the underlying generation model is more length-aware.
 
-This repository uses the prompt template from the DALL-E 3 technical report (Appendix C).
+   This repository uses the prompt template from the DALL-E 3 technical report (Appendix C).
+
+2. It's important to investigate the output of the language model that's producing the descriptive captions. This directly impacts the quality of the images. As mentioned above, the prompt template is the original one used in the DALL-E 3 report. But different language models might respond differently to that template. So, figuring out which template gives the best output most of the times is crucial.
 
 ## Notes
 
