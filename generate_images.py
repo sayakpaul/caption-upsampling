@@ -54,9 +54,9 @@ def main():
         main_dict.update(
             {
                 i: {
-                    "Prompt": sample[i]["Prompt"],
+                    "Prompt": sample["Prompt"],
                     "Image": regular_caption_paths[i],
-                    "Upsampled_Prompt": sample[i]["Upsampled Prompt"],
+                    "Upsampled_Prompt": sample["Upsampled Prompt"],
                     "Image_With_Upsampled_Prompt": upsampled_caption_paths[i],
                 }
             }
