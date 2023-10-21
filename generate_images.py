@@ -25,11 +25,8 @@ def main():
 
     print("Running inference...")
     main_dict = {}
-    image_path_ids = list(range(len(drawbench)))
-    regular_caption_paths = list(map(lambda i: f"sdxl_{i}.png", image_path_ids))
-    upsampled_caption_paths = list(
-        map(lambda i: f"sdxl_upsampled_{i}.png", image_path_ids)
-    )
+    regular_caption_paths = []
+    upsampled_caption_paths = []
 
     for i in range(0, len(drawbench), BATCH_SIZE):
         samples = drawbench[i : i + BATCH_SIZE]
@@ -38,7 +35,9 @@ def main():
         prompts = list(samples["Prompt"])
         images = pipe(prompts, generator=generator, num_inference_steps=25).images
         for j in range(len(images)):
-            images[j].save(regular_caption_paths[j])
+            img_name = f"sdxl_{i + j}.png"
+            images[j].save(img_name)
+            regular_caption_paths.append(img_name)
 
         # Upsampled captions.
         usampled_prompts = list(samples["Upsampled Prompt"])
@@ -46,7 +45,9 @@ def main():
             usampled_prompts, generator=generator, num_inference_steps=25
         ).images
         for j in range(len(images)):
-            images[j].save(upsampled_caption_paths[j])
+            img_name = f"sdxl_upsampled_prompt_{i + j}.png"
+            images[j].save(img_name)
+            upsampled_caption_paths.append(img_name)
 
     for i in range(drawbench):
         sample = drawbench[i]

@@ -21,7 +21,7 @@ def load_chat_pipeline():
 def get_messages_for_chat() -> Tuple[Dict, List[Dict]]:
     """
     Prepares the system and user-assistant style messages for inference.
-    
+
     Example messages come from the DALL-E 3 technical report:
     https://cdn.openai.com/papers/dall-e-3.pdf.
     """
