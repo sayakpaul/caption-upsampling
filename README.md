@@ -24,13 +24,14 @@ This repository implements the idea of "caption upsampling" from [DALL-E 3](http
         <td><b>A regal-looking snowy owl perches on a rocky outcropping, its feathers fluffed against the chilly wind. The bird's large, yellow eyes are fixed on a rabbit nibbling on some grass in the distance. The sun sets behind the owl, casting a warm orange glow over the landscape.</b></td>
     </tr>
 </table>
-<sub>Explore more samples <a href="https://huggingface.co/datasets/sayakpaul/drawbench-sdxl">here</a></sub>
+<sub>Explore more samples <a href="https://huggingface.co/datasets/sayakpaul/drawbench-sdxl">here.</a></sub>
 <br><br>
 
 "Caption upsampling" is the $10 term for deriving a highly descriptive caption from a short caption. Here is an example:
 
-**Short**: A bird scaring a scarecrow
-**Upsampled**: A large, vibrant bird with an impressive wingspan swoops down from the sky, letting out a piercing call as it approaches a weathered scarecrow in a sunlit field. The scarecrow, dressed in tattered clothing and a straw hat, appears to tremble, almost as if it’s coming to life in fear of the approaching bird.
+**Short**: _A bird scaring a scarecrow_
+
+**Upsampled**: _A large, vibrant bird with an impressive wingspan swoops down from the sky, letting out a piercing call as it approaches a weathered scarecrow in a sunlit field. The scarecrow, dressed in tattered clothing and a straw hat, appears to tremble, almost as if it’s coming to life in fear of the approaching bird._
 
 This is particularly useful in the context of text-to-image generation.
 
