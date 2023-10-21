@@ -19,7 +19,12 @@ def load_chat_pipeline():
 
 
 def get_messages_for_chat() -> Tuple[Dict, List[Dict]]:
-    """Prepares the system and user-assistant style messages for inference."""
+    """
+    Prepares the system and user-assistant style messages for inference.
+    
+    Example messages come from the DALL-E 3 technical report:
+    https://cdn.openai.com/papers/dall-e-3.pdf.
+    """
     system_message = {
         "role": "system",
         "content": """You are part of a team of bots that creates images. You work with an assistant bot that will draw anything you say in square brackets. For example, outputting "a beautiful morning in the woods with the sun peaking through the trees" will trigger your partner bot to output an image of a forest morning, as described. You will be prompted by people looking to create detailed, amazing images. The way to accomplish this is to take their short prompts and make them extremely detailed and descriptive.
