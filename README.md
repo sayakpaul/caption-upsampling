@@ -51,6 +51,31 @@ After the DrawBench prompts were "upsampled", the `generate_images.py` script wa
 
 ### SDXL Refiner 
 
+<table>
+    <tr>
+        <td><img src="https://huggingface.co/datasets/sayakpaul/sample-datasets/resolve/main/caption-upsampling/refiner/sandwich.jpg" alt="Sample Image 1"></td>
+        <td><img src="https://huggingface.co/datasets/sayakpaul/sample-datasets/resolve/main/caption-upsampling/refiner/car_sheep.jpg" alt="Sample Image 2"></td>
+        <td><img src="https://huggingface.co/datasets/sayakpaul/sample-datasets/resolve/main/caption-upsampling/refiner/owl.jpg" alt="Sample Image 3"></td>
+    </tr>
+    <tr>
+        <td><b>A white colored sandwich.</b></td>
+        <td><b>A white car and a red sheep.</b></td>
+        <td><b>A side view of an owl sitting in a field.</b></td>
+    </tr>
+    <tr>
+        <td><img src="https://huggingface.co/datasets/sayakpaul/sample-datasets/resolve/main/caption-upsampling/refiner/upsampled_sandwich.jpg" alt="Sample Image 4"></td>
+        <td><img src="https://huggingface.co/datasets/sayakpaul/sample-datasets/resolve/main/caption-upsampling/refiner/upsampled_car_sheep.jpg" alt="Sample Image 5"></td>
+        <td><img src="https://huggingface.co/datasets/sayakpaul/sample-datasets/resolve/main/caption-upsampling/refiner/upsampled_owl.jpg" alt="Sample Image 6"></td>
+    </tr>
+    <tr>
+        <td><b>A white-bread sandwich with delicate layers of fluffy turkey, crisp lettuce, and juicy tomatoes is placed on a wooden cutting board. The sandwich is surrounded by various condiments, including mayonnaise, mustard, and a small jar of pickles. The scene is set in a cozy kitchen, with natural light pouring in through a window.</b></td>
+        <td><b>A white car is parked on the side of a road in a green meadow. In the distance, a flock of red sheep can be seen grazing. The car seems to be abandoned, and the windows are shattered. The scene is eerie, and there is an unsettling feeling in the air.</b></td>
+        <td><b>A regal-looking snowy owl perches on a rocky outcropping, its feathers fluffed against the chilly wind. The bird's large, yellow eyes are fixed on a rabbit nibbling on some grass in the distance. The sun sets behind the owl, casting a warm orange glow over the landscape.</b></td>
+    </tr>
+</table>
+<sub>Explore more samples <a href="https://huggingface.co/datasets/sayakpaul/drawbench-sdxl-refiner">here</a>.</sub>
+<br><br>
+
 ### Kandinsky V2.2
 
 <table>
