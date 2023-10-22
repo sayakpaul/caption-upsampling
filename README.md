@@ -49,6 +49,8 @@ After the DrawBench prompts were "upsampled", the `generate_images.py` script wa
 
 ## Additional examples
 
+This section presents results generated using the SDXL Refiner and Kandinsky V2.2. These were generated using the scripts from the `additional_examples` directory.
+
 ### SDXL Refiner 
 
 <table>
@@ -109,7 +111,9 @@ After the DrawBench prompts were "upsampled", the `generate_images.py` script wa
 
    This repository uses the prompt template from the DALL-E 3 technical report (Appendix C).
 
-2. It's important to investigate the output of the language model that's producing the descriptive captions. This directly impacts the quality of the images. As mentioned above, the prompt template is the original one used in the DALL-E 3 report. But different language models might respond differently to that template. So, figuring out which template gives the best output most of the times is crucial.
+2. DALL-E 3 conducts training on a recaptioned dataset where the captions were regenerated to be much more detailed using GPT-4. It then demonstrates the effectiveness of using detailed prompts during inference. However, existing works (as noted in [here](#notes)) show that it's possible to improve the generation quality of existing systems like SDXL with detailed prompts even when they weren't particularly trained on similar datasets very detailed captions.
+
+3. It's important to investigate the output of the language model that's producing the descriptive captions. This directly impacts the quality of the images. As mentioned above, the prompt template is the original one used in the DALL-E 3 report. But different language models might respond differently to that template. So, figuring out which template gives the best output most of the times is crucial.
 
 ## Notes
 
@@ -118,3 +122,4 @@ The core idea of using detailed prompts to improve the quality of the generated 
 * "Better prompt engineering" section from [this doc](https://huggingface.co/docs/diffusers/main/en/stable_diffusion#better-prompt-engineering)
 * [lllyasviel/Fooocus](https://github.com/lllyasviel/Fooocus)
 
+Additionally, [PixArt-Alpha](https://github.com/PixArt-alpha/PixArt-alpha) shows that fine-tuning on a dataset with highly detailed captions can lead to substantial quality improvements.
