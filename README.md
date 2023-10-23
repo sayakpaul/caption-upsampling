@@ -1,4 +1,4 @@
-# caption-usampling
+# caption-upsampling
 
 This repository implements the idea of "caption upsampling" from [DALL-E 3](https://cdn.openai.com/papers/dall-e-3.pdf) with [Zephyr-7B](https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha) and gathers results with [SDXL](https://huggingface.co/papers/2307.01952).
 
@@ -111,9 +111,9 @@ This section presents results generated using the SDXL Refiner and Kandinsky V2.
 
    This repository uses the prompt template from the DALL-E 3 technical report (Appendix C).
 
-2. DALL-E 3 conducts training on a recaptioned dataset where the captions were regenerated to be much more detailed using GPT-4. It then demonstrates the effectiveness of using detailed prompts during inference. However, existing works (as noted in [here](#notes)) show that it's possible to improve the generation quality of existing systems like SDXL with detailed prompts even when they weren't particularly trained on similar datasets very detailed captions.
+2. DALL-E 3 conducts training on a recaptioned dataset where the captions were regenerated to be much more detailed using GPT-4. It then demonstrates the effectiveness of using detailed prompts during inference. However, existing works (as noted in [here](#notes)) show that it's possible to improve the generation quality of existing systems like SDXL with detailed prompts even when they weren't particularly trained on similar datasets with very detailed captions.
 
-3. It's important to investigate the output of the language model that's producing the descriptive captions. This directly impacts the quality of the images. As mentioned above, the prompt template is the original one used in the DALL-E 3 report. But different language models might respond differently to that template. So, figuring out which template gives the best output most of the times is crucial.
+3. It's important to investigate the output of the language model that's producing the descriptive captions. This directly impacts the quality of the images. As mentioned above, the prompt template is the original one used in the DALL-E 3 report. However, different language models might respond differently to that template. So, figuring out which template gives the best output most of the time is crucial.
 
 ## Notes
 
