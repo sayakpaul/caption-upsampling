@@ -1,4 +1,4 @@
-# caption-upsampling
+![image](https://github.com/sayakpaul/caption-upsampling/assets/22957388/7ae30560-a73a-4851-8e5c-5d789faa7a3b)# caption-upsampling
 
 This repository implements the idea of "caption upsampling" from [DALL-E 3](https://cdn.openai.com/papers/dall-e-3.pdf) with [Zephyr-7B](https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha) and gathers results with [SDXL](https://huggingface.co/papers/2307.01952).
 
@@ -24,7 +24,7 @@ This repository implements the idea of "caption upsampling" from [DALL-E 3](http
         <td><b>A regal-looking snowy owl perches on a rocky outcropping, its feathers fluffed against the chilly wind. The bird's large, yellow eyes are fixed on a rabbit nibbling on some grass in the distance. The sun sets behind the owl, casting a warm orange glow over the landscape.</b></td>
     </tr>
 </table>
-<sub>Explore more samples <a href="https://huggingface.co/datasets/sayakpaul/drawbench-sdxl">here</a>. Find additional examples below with SDXL Refiner and Kandinsky V2.2.</sub>
+<sub>Explore more samples <a href="https://huggingface.co/datasets/sayakpaul/drawbench-sdxl">here</a>. Find additional examples <a href="https://github.com/sayakpaul/caption-upsampling#additional-examples">below</a> with SDXL Refiner and Kandinsky V2.2.</sub>
 <br><br>
 
 "Caption upsampling" is the $10 term for deriving a highly descriptive caption from a short caption. Here is an example:
