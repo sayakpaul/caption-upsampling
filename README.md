@@ -1,4 +1,4 @@
-![image](https://github.com/sayakpaul/caption-upsampling/assets/22957388/7ae30560-a73a-4851-8e5c-5d789faa7a3b)# caption-upsampling
+# caption-upsampling
 
 This repository implements the idea of "caption upsampling" from [DALL-E 3](https://cdn.openai.com/papers/dall-e-3.pdf) with [Zephyr-7B](https://huggingface.co/HuggingFaceH4/zephyr-7b-alpha) and gathers results with [SDXL](https://huggingface.co/papers/2307.01952).
 
