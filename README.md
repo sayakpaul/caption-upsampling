@@ -35,7 +35,7 @@ This repository implements the idea of "caption upsampling" from [DALL-E 3](http
 
 This is particularly useful in the context of text-to-image generation.
 
-**Update 23/10/2023**: Got featured in this [TLDR newsletter](https://tldr.tech/ai/2023-10-23).
+🌟 **Update 23/10/2023**: Got featured in this [TLDR newsletter](https://tldr.tech/ai/2023-10-23).
 
 ## Why does this repo exist?
 
