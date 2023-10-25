@@ -35,6 +35,8 @@ This repository implements the idea of "caption upsampling" from [DALL-E 3](http
 
 This is particularly useful in the context of text-to-image generation.
 
+**Update 23/10/2023**: Got featured in this [TLDR newsletter](https://tldr.tech/ai/2023-10-23).
+
 ## Why does this repo exist?
 
 DALL-E 3 uses GPT-4 for upsampling the captions. This repository aims at providing an implementation with an open-source model that is capable of performing something similar but doesn't require you to pay for the usage. As such it makes use of the "zephyr-7b-alpha" model, fine-tuned from the mighty [Mistral-7B model](https://huggingface.co/mistralai/Mistral-7B-v0.1).
